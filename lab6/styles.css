@@ -1,0 +1,13 @@
+body {font-family: Georgia, serif;
+    
+}
+h1, h2, h3 { 
+    color:darkorchid
+}
+
+.evenrow{
+    background-color: lightgrey;
+}
+h1 { font: size 2em; ;}
+h2 { font: size 1.5em; ;}
+
