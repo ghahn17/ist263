@@ -1,0 +1,17 @@
+body {color:#332F6E; 
+    background-color:#F7F2F8; 
+}
+h1,h2,h3 {color:#A75086;
+}
+a:link {color:#720edd;}
+nav a {background-color:#E8D8D8;
+    padding: 10px; 
+    margin-bottom: 30px;
+    }
+    nav a:hover {background-color:#A75086;}
+.tagline {float:right;} 
+.box1,.linkedin,.address {background-color:#f3a3f6; border-radius:1em;padding:5px; margin:15px;float:left;}
+
+.box2 {background-color: #f6c9f8; display:flex; border-radius:1em; padding:13px; margin:15px;float:left;}
+.map {flex: 1; order: 2; margin-left: 2em;}
+
