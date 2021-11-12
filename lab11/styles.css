@@ -5,13 +5,14 @@ h1,h2,h3 {color:#A75086;
 }
 h1,h3,h4{text-align:center;}
 
+table, th, td {border: 1px solid black;}
 
 a:link {color:#720edd;}
 nav a {background-color:#E8D8D8;
     padding: 10px; 
     margin-bottom: 30px;
     }
-    nav a:hover {background-color:#A75086;}
+    nav a:hover {background-color:#fcc6e7;}
 .tagline {float:right;} 
 .box1,.linkedin,.address {background-color:#f3a3f6; border-radius:1em;padding:5px; margin:15px;float:left;}
 
