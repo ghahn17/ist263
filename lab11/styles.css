@@ -14,7 +14,7 @@ nav a {background-color:#E8D8D8;
     }
     nav a:hover {background-color:#fcc6e7;}
 .tagline {float:right;} 
-.box1,.linkedin,.address {background-color:#f3a3f6; border-radius:1em;padding:5px; margin:15px;float:left;}
+.box1,.linkedin,.address {background-color:#f3c6f5; border-radius:1em;padding:5px; margin:15px;float:left;}
 
 .box2 {background-color: #f6c9f8; display:flex; border-radius:1em; padding:13px; margin:15px;float:left; flex-wrap:wrap;}
 .map {flex: 1; order: 2; margin-left: 2em;}
