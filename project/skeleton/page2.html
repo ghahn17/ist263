@@ -21,7 +21,8 @@
         h1{text-align: center;
         padding:15px;}
 
-        h2{padding-left: 20px;}
+        h2{padding-left: 20px;
+        text-decoration: underline;}
 
         .description{padding-left: 40px;
         padding-right:40px ;
@@ -37,6 +38,13 @@
         img{align-items:baseline;}
       
         .caption{font-size: 8px;}
+
+        @media only screen and (max-width:900px) {
+        img{max-width:100%;
+        flex:none;
+        }
+        }
+
         </style>
 </head>
 <body>
