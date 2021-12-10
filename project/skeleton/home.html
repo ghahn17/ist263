@@ -13,95 +13,128 @@
     body{font-family: 'Francois One', sans-serif;
         background-color: #ffcf67 ;
         color: #00154f;
+        box-sizing: border-box;
     }
     p{font-size: 1.120em; padding: 10px;}
     h1{padding: 10px;}
     nav{font-size: 2em;
         text-align: center;
     }
-    .header{width: 1375px; align-content: center;
+  
+    .one, .two{display:flex;
+        justify-content: center;
+        flex-basis: 50%;
     }
- 
-    .chairlift{
-        width:600px;
-        float:left;
-        margin:40px;
-    }
-    .mtn{margin:40px;
-        width:600px;
-        float:left;
-    }
-
     .clear{clear:both}
-    .one,.two{padding:15px}
-
-    .racer{width:500px;
-        margin:50px;
-    }
-    .plake{width:393px;
-        margin:50px;
-    }
-    .images{display:flex;
-            justify-content: center;
-            flex-basis:50%
-    }
-    .cuseski{width:500px}
-    .little{width:250px}
+   
     .cuseski,.little{float:right;
         padding:10px;
     }
+    .description{padding:20px}
+    .images{display:flex;
+            justify-content: center;
+            flex-basis:50%;
+            padding:30px;
+    }
+    .homepic{padding:20px}
+
     @media only screen and (max-width:900px) {
         img{max-width:100%;}
+        .one, .two,.images,.three{flex-wrap: wrap;}
+        .bg-img{max-width:100%}
+        .topnav {max-width: 3200px;}  
     }
+.bg-img {
+background-image: url(../images/bigsky.jpeg);
+min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 1375px; 
+  align-content: center; 
+}
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(24, 36, 73);
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: rgb(241, 220, 99);
+  color: black;
+}
     
     </style>
 </head>
 <body>
-    <header> <img class="header" src="../images/bigsky.jpeg" alt="big sky's Lone peak">
-    <nav>
-        <a href= "home.html">History of Skiing |</a>
-        <a href= "page2.html">Types of Skiing |</a>
-        <a href= "page3.html">The Best Skiing </a>
-    </nav> 
-</header> 
+    <div class="bg-img">
+        <div class="container">
+          <div class="topnav">
+              <a href= "home.html">History of Skiing </a>
+              <a href= "page2.html">Types of Skiing </a>
+              <a href= "page3.html">The Best Skiing </a>
+          </div>
+        </div>
+      </div>
   
 <article>
- <img class="chairlift" src="../images/vintagechairlift.jpeg" alt="vintage chairlift">   
- <div class="one">   
-<h1> So, what even is skiing?</h1> 
+<h1 class="titles"> So, what even is skiing?</h1> 
+<div class="one">
+<div class="chairlift">
+ <img src="../images/vintagechairlift.jpeg" alt="vintage chairlift"> 
+ </div> 
+ <div class="description">
 <p> Merriam-Webster defines skiing as <strong>“the art or sport of sliding and jumping on skis”</strong>. A skier attaches long, flat, stick like objects to the bottom of their feet, secured by boots that are specially designed to fit bindings. These allow a person to glide quickly over snow. Skiing is both a recreational and competitive professional sport, however, it began as a form of transportation. </p>
-<div class="clear"></div>
+</div>
 </div>
 </article>
 
 <article> 
-<img class="mtn" src="../images/10mtndivison.jpg" alt="10th mountain division skier">
+<h1 class="titles">A brief history of skiing</h1>      
 <div class="two">
-<h1>A brief history of skiing</h1>      
+<div class="mtn">
+<img src="../images/10mtndivison.jpg" alt="10th mountain division skier">
+</div>
+<div class="description">
 <p>The first records of skiing date back to 7000-8000 BC in Russia and China. In regions with heavy and annual snowfall, skiing was created as a fast new way of transportation. In Scandinavia, skis were used daily by farmers, hunters, and warriors in the Middle Ages. Skiing was a way of survival, as it helped people traverse through mass amounts of snow faster and safer. This led to modifications to the skis, and the addition of ski poles, which helped further propel skiers using the upper body. Skiing was used by armies to cross snow-covered peaks, but also by children to get to school. As time went on, the act of skiing became more and more for pleasure, and less for work. Flash forward to the early 1900’s, and ski mountains start popping up across the US and the world. In 1936, men’s and women’s alpine skiing became an Olympic sport. By the 1980s, skiing had become one of the recreational top winter sports in the US. Today.</p> 
-<div class="clear"></div>
+</div>
 </div>
 </article>   
 
 <div class="images">
     <div class="homepic">
-        <img class="racer" src="../images/80sskiracer.webp" alt="Ski Racer vintage">
+        <img src="../images/80sskiracer.png" alt="Ski Racer vintage">
     </div>
     <div class="homepic">
-        <img class="plake" src="../images/glen-plake-extreme-1.jpg" alt="Glen Plake ski jump">
+        <img src="../images/glen-plake-extreme-1.jpg" alt="Glen Plake ski jump">
 
     </div>
 </div>
 
 <article>
-<img class="little" src="../images/littlegillian.jpeg" alt="Gillian skiing when she was small">
-<img class="cuseski" src="../images/cuseski.jpeg" alt="Syracuse ski racer">
-<div class="three">
-<h1>A brief skiing history of the author, Gillian Hahn:</h1>
-<p>Hi. I’m Gillian Hahn. I am a skier. My first skiing experience was at age 2, in my backyard in Maine. My parents grew up skiing and skied all through their lives and decided to teach me as soon as I could walk. By age 4, I could successfully make it down a trail with my dad’s help. By age 6, I could ski completely on my own. Skiing has been the best part of my life since then. I have not missed a ski season since age 2, and I don’t plan on missing one for the rest of my life. Today, I ski for the Syracuse Ski Team and am going into my 11th straight season of skiing at Sunday River in Bethel, Maine. </p>
-<div class="clear"></div>
-</div>
-</article>
+    <h1>A brief skiing history of the author, Gillian Hahn:</h1>
+    <div class="three">
+    <div class="little">
+    <img class="little" src="../images/littlegillian.jpeg" alt="Gillian skiing when she was small">
+    <img class="cuseski" src="../images/cuseski.jpeg" alt="Syracuse ski racer">
+    </div>
+    <div class="description">
+    <p>Hi. I’m Gillian Hahn. I am a skier. My first skiing experience was at age 2, in my backyard in Maine. My parents grew up skiing and skied all through their lives and decided to teach me as soon as I could walk. By age 4, I could successfully make it down a trail with my dad’s help. By age 6, I could ski completely on my own. Skiing has been the best part of my life since then. I have not missed a ski season since age 2, and I don’t plan on missing one for the rest of my life. Today, I ski for the Syracuse Ski Team and am going into my 11th straight season of skiing at Sunday River in Bethel, Maine. </p>
+    </div>
+    </div>
+    </article>
 
     <footer>
         <p>By Gillian Hahn &copy; 2021</p>

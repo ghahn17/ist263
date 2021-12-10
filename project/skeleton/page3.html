@@ -29,18 +29,60 @@
         .description{padding:20px;}
         
         hr{height:2px;border-width:0;color:#00154f;background-color:#00154f;}
+
+        @media only screen and (max-width:900px) {
+        img{max-width:100%; }
+        .mtn5,.mtn4,.mtn3,.mtn2,.mtn1{flex-wrap: wrap;}
+        .bg-img{max-width:100%}
+        }
+
+        .bg-img {
+background-image: url(../images/bigsky.jpeg);
+min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 1375px; 
+  align-content: center; 
+}
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(24, 36, 73);
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: rgb(241, 220, 99);
+  color: black;
+}
         </style>
 </head>
 <body> 
-    <nav>
-        <header> <img class="header" src="../images/bigsky.jpeg">
-        <a href= "home.html">History of Skiing |</a>
-        <a href= "page2.html">Types of Skiing |</a>
-        <a href= "page3.html">The Best Skiing</a>
-    </nav> 
+    <body>
+        <div class="bg-img">
+            <div class="container">
+              <div class="topnav">
+                  <a href= "home.html">History of Skiing </a>
+                  <a href= "page2.html">Types of Skiing </a>
+                  <a href= "page3.html">The Best Skiing </a>
+              </div>
+            </div>
+          </div>
 <header>
 <h1>Gillian Hahn’s Top Places to Ski Around the World:</h1> 
-<p class="tagline">There are hundreds of thousands of ski mountains around the world. I've only been to (maybe) 25. Here is my list of favorite places to ski, and where I think every skier should ski before they die.</h4>   
+<p class="tagline">There are thousands of ski mountains around the world. I've only been to (maybe) 25. Here is my list of favorite places to ski, and where I think every skier should ski before they die.</h4>   
 </header>
 
 <article>

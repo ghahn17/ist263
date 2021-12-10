@@ -16,14 +16,11 @@
         nav{font-size: 2em;
             text-align: center;
         }
-        .header{width: 1375px; align-content: center;}
-
         h1{text-align: center;
         padding:15px;}
 
-        h2{padding-left: 20px;
+        h2{padding-left: 40px;
         text-decoration: underline;}
-
         .description{padding-left: 40px;
         padding-right:40px ;
         }
@@ -35,28 +32,59 @@
             font-size: 1.1em;
         
         }
-        img{align-items:baseline;}
-      
         .caption{font-size: 8px;}
 
         @media only screen and (max-width:900px) {
-        img{max-width:100%;
-        flex:none;
-        }
+        img{max-width:100%;}
+        .free, .back, .race{ flex-wrap: wrap;}
+        .bg-img{max-width: 100%;}
         }
 
+    .bg-img {
+background-image: url(../images/bigsky.jpeg);
+min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 1375px; 
+  align-content: center; 
+}
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(24, 36, 73);
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: rgb(241, 220, 99);
+  color: black;
+}
         </style>
 </head>
 <body>
-    <nav>
-        <header> <img class="header" src="../images/bigsky.jpeg">
-        <a href= "home.html">History of Skiing |</a>
-        <a href= "page2.html">Types of Skiing |</a>
-        <a href= "page3.html">The Best Skiing</a>
-    </nav>
-    <header>
+    <body>
+        <div class="bg-img">
+            <div class="container">
+              <div class="topnav">
+                  <a href= "home.html">History of Skiing </a>
+                  <a href= "page2.html">Types of Skiing </a>
+                  <a href= "page3.html">The Best Skiing </a>
+              </div>
+            </div>
+          </div>
 <h1>Skiing takes many different forms. Here are the basic 3:</h1>  
-    </header>
 <article>
 <h2>Freeskiing</h2>
 <p class="description">Freeskiing is exactly what it sounds like. There are no real rules to freeskiing, except that you must be actually doing the act of skiing, i.e having skis on your feet. Typically, freeskiing implies someone skiing at a resort or mountain with leisure. However, skiing can be done anywhere with snow. They have no goals, no times to beat, and no limits. A freeskier can simply ski anywhere on snow, as fast or slow as they want. This can include double black diamonds, tree trails, the terrain park, or the bunny hill. Freeskiers can be any ability level, which therefore means that every skier, at one point or another, was probably freeskiing. This makes freeskiing the most popular and widespread type of skiing because it can be done by virtually anyone.</p>
@@ -94,7 +122,7 @@
 </div>
 <div class="equip2">
 <ul>
-    <h3>Backcountry Equipment</h3>
+    <h3>Backcountry Equipment:</h3>
     <li>Skis</li>
     <li>Poles</li>
     <li>Boots </li>
